@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  user-select: none;
+  font-family: Poppins-Medium;
+}
+
+// Primary-color: #242d38
+// Secondary-color: #efd592
+
+@font-face {
+  font-family: Poppins;
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./fonts/Poppins-Bold.ttf");
+}
+
+#app,
+body,
+html {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #242d38;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  width: 100% * 60px;
+  background-color: #242d38;
+  color: #efd592;
+  border-bottom: 1.5px solid #efd592;
+  padding: 0.25rem;
+  letter-spacing: 5px;
+}
+
+.Logo {
+  padding: 0rem 1rem;
+  font-size: 36px;
+}
+
+#CardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 7.5rem;
+  max-width: 1000px;
+  gap: 90px 20px;
+}
+
+.NumberSection {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  top: -1rem;
+}
+
+.NumberContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  background-color: #242d38;
+  color: #efd592;
+  border: 1px solid #efd592;
+}
+
+.Card {
+  display: grid;
+  position: relative;
+  grid-template-rows: 0.5fr 2fr 0.1fr;
+  padding: 40px;
+  background-color: #efd592;
+  color: #242d38;
+  gap: 0.75rem;
+  max-width: 30%;
+}
+
+.Card hr {
+  padding: 0.05rem;
+  width: 100%;
+  background-color: #242d38;
+  color: #242d38;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: regular;
+}
+
+.Sub {
+  font-size: 18px;
+  font-weight: regular;
+}
+
+.Text {
+  font-size: 18px;
+  font-weight: regular;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: center;
+  width: (100% - 40px) * 60px;
+}
+
+.Button {
+  position: absolute;
+  bottom: -2rem;
+  font-size: 14px;
+  width: 80%;
+  background-color: #242d38;
+  color: #efd592;
+  border: 1px solid #efd592;
+  font-family: Poppins-Medium;
+  padding: 1rem;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.Menu {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    max-width: 100vw;
+  }
+
+  .Logo {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .Card {
+    width: 50rem;
+  }
+
+  #CardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
